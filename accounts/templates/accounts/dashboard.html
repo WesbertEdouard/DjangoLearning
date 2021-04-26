@@ -1,0 +1,63 @@
+{% extends 'accounts/main.html' %}
+
+{% block content %}
+
+{% include 'accounts/status.html' %}
+
+<div class="row">
+    <div class="col-md-5">
+        <h5>Customer</h5>
+        <hr>
+        <div class="card card-body">
+            <a href="" class="btn btn-primary btn-sm btn-block">Create Customer</a>
+            <table class="table table-sm">
+                <tr>
+                    <th></th>
+                    <th>Customer</th>
+                    <th>Orders</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    
+    <div class="col-sm-2">
+        <div class="c-callout c-callout-danger b-t-1 b-r-1 b-b-1">
+          <small class="text-muted">Recuring Clients</small><br>
+          <strong class="h4">22,643</strong>
+        </div>
+      </div>
+
+      <div class="card mb-3 c-callout c-callout-danger" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">It's a broader card with text below as a natural lead-in to extra content. This content is a little longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="col-md-7">
+        <h5>Last 5 Orders</h5>
+        <hr>
+        <div class="card card-body">
+            <a href="" class="btn btn-primary btn-sm btn-block">Create Order</a>
+            <table class="table table-sm">
+                <tr>
+                    <th>Product</th>
+                    <th>Date Ordered</th>
+                    <th>Status</th>
+                    <th>Update</th>
+                    <th>Remove</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+</div>
+{% endblock %}
